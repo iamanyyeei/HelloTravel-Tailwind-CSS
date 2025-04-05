@@ -1,3 +1,20 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import 'tailwindcss/apply';
+
+.card{
+    @apply min-w-52 h-72 rounded-2xl shadow-lg shadow-gray-300 snap-start;
+}
+
+.info__card{
+    @apply w-full h-2/5 rounded-b-2xl flex flex-col space-y-2 p-4;
+}
+
+.card:nth-child(odd) .info__card{
+    @apply bg-cyan-500 text-white;
+}
+
+.card:nth-child(even) .info__card{
+    @apply  bg-cyan-50 text-cyan-800;
+}
