@@ -4,7 +4,8 @@
 @import 'tailwindcss/apply';
 
 .card{
-    @apply min-w-52 h-72 rounded-2xl shadow-lg shadow-gray-300 snap-start;
+    @apply min-w-52 h-72 mt-6 rounded-2xl shadow-lg shadow-gray-300 snap-start 
+    transform transition-all hover:-translate-y-6 hover:shadow-xl hover:shadow-gray-400;
 }
 
 .info__card{
@@ -17,4 +18,12 @@
 
 .card:nth-child(even) .info__card{
     @apply  bg-cyan-50 text-cyan-800;
+}
+
+.card-estancia__title{
+    @apply text-cyan-800 text-xl font-semibold pt-6 pl-8 pb-2;
+}
+
+.card-estancia__info{
+    @apply text-cyan-800 text-lg font-normal pl-8 pr-8 p-1 bg-white opacity-90;
 }

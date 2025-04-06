@@ -17,8 +17,9 @@
         <section id="home" class="w-full h-3/4">
             <div class="w-full h-full bg-salto-angel bg-cover bg-center">
                 <div class="w-full h-full flex flex-col absolute space-y-96 py-8 items-center">
-                    <input class="outline-none rounded-lg p-3 shadow-lg shadow-gray-500" type="search" placeholder="El Salto Ángel">
-                    <button class="bg-white text-cyan-800 rounded-md font-normal text-xl px-6 py-2 shadow-lg shadow-gray-500">
+                    <input class="outline-none rounded-lg p-3 shadow-lg shadow-gray-500 transition duration-300  focus:outline-none focus-within:shadow-lg focus:ring-2 focus:w-11/12" type="search" placeholder="El Salto Ángel">
+                    <button class="bg-white text-cyan-800 rounded-md font-normal text-xl px-6 py-2 shadow-lg shadow-gray-500
+                                    transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-cyan-800 hover:text-white">
                         Explorar
                     </button>
                 </div>
@@ -26,9 +27,9 @@
         </section>
 
 
-        <section id="recomendados" class="w-full h-full px-8">
+        <section id="recomendados" class="w-full h-auto px-12 lg:px-16">
 
-            <h1 class="text-cyan-800 font-semibold text-xl pt-10 pb-10">Recomendados</h1>
+            <h1 class="text-cyan-800 font-semibold text-2xl sm:text-3xl pt-10 pb-10">Recomendados</h1>
 
             
             <div class="flex flex-row space-x-4 pb-10 overflow-x-auto snap-x">
@@ -103,7 +104,34 @@
         </section>
 
 
-        <section id="rentas_destacadas">
+        <section id="rentas_destacadas" class="w-full h-auto px-12 md:px-24 lg:px-32 pb-14">
+
+            <h1 class="text-cyan-800 font-semibold text-2xl sm:text-3xl pt-10 pb-10">Estancias destacadas</h1>
+
+            <div class="grid grid-rows-4 md:grid-cols-5 md:grid-rows-3 w-full h-auto space-y-6 gap-x-6 justify-center">
+
+                <div class="bg-estancia2 bg-cover bg-center rounded-2xl w-full h-96 md:col-start-1 md:col-end-6">
+                    <p class="card-estancia__title">Ibiza</p>
+                    <p class="card-estancia__info">3 Habitaciones, 2 baños, 1 cocina y piscina privada.</p>
+                </div>
+
+                <div class="bg-estancia1 bg-cover bg-center w-auto rounded-2xl md:col-span-2 md:row-start-2 md:row-end-5">
+                    <p class="card-estancia__title">Bogotá</p>
+                    <p class="card-estancia__info">1 Habitación matrimonial, baño y cocina.</p>
+                </div>
+
+                <div class="bg-estancia3 bg-cover bg-center rounded-2xl md:col-span-3 md:row-start-2 md:row-end-3">
+                    <p class="card-estancia__title">Dallas</p>
+                    <p class="card-estancia__info">2 Habitaciones con baño y cocina.</p>
+                </div>
+
+                <div class="bg-estancia4 bg-cover bg-center rounded-2xl md:col-span-3 md:row-start-3 md:row-end-4">
+                    <p class="card-estancia__title">Miami</p>
+                    <p class="card-estancia__info">1 Habitación con baño y jacuzzi, piscina privada.</p>
+                </div>
+
+            </div>
+
         </section>
 
     </main>

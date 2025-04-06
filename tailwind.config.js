@@ -25,9 +25,13 @@ module.exports = {
         'salto-angel' : "url('/public/img/salto-angel.jpg')",
         'vegas' : "url('/public/img/vegas.jpg')",
         'venecia' : "url('/public/img/venecia.jpg')",
-      }
+
+        'estancia1' : "url('/public/img/estancias/estancia1.jpg')",
+        'estancia2' : "url('/public/img/estancias/estancia2.jpg')",
+        'estancia3' : "url('/public/img/estancias/estancia3.jpg')",
+        'estancia4' : "url('/public/img/estancias/estancia4.jpg')",
+      },
     },
   },
   plugins: [],
 }
-
